@@ -1,10 +1,7 @@
-from django.urls import path
+from rest_framework.routers import DefaultRouter
+
 from . import views
 
-
-app_name = "shelter"
-
-urlpatterns = [
-    path('api/', views.PetView.as_view(), name="pet_api_get_post"),
-    path('api/<int:pk>', views.SinglePetView.as_view(), name="pet_api_update"),
-]
+router = DefaultRouter()
+router.register(r'api', views.PetViewSet)
+urlpatterns = router.urls
