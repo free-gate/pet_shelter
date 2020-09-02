@@ -12,6 +12,9 @@ class PetApiViewSet(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticated,
                           AccessPermission,)
 
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
+
     def perform_destroy(self, instance):
         instance.deleted_on = datetime.date.today()
         instance.save()

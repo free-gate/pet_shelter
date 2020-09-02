@@ -2,24 +2,21 @@ from rest_framework.permissions import BasePermission
 
 
 class AccessPermission(BasePermission):
-    def has_object_permission(self, request, view, obj):
+
+    def _check_request(self, request):
+        perm = False
         if request.method == "GET":
-            return request.user.has_perm('shelter.view_pet')
+            perm = request.user.has_perm('shelter.view_pet')
         elif request.method == "POST":
-            return request.user.has_perm('shelter.add_pet')
+            perm = request.user.has_perm('shelter.add_pet')
         elif request.method in ["PUT", "PATCH"]:
-            return request.user.has_perm('shelter.change_pet')
+            perm = request.user.has_perm('shelter.change_pet')
         elif request.method == "DELETE":
-            return request.user.has_perm('shelter.delete_pet')
-        return True
+            perm = request.user.has_perm('shelter.delete_pet')
+        return perm
+
+    def has_object_permission(self, request, view, obj):
+        return self._check_request(request)
 
     def has_permission(self, request, view):
-        if request.method == "GET":
-            return request.user.has_perm('shelter.view_pet')
-        elif request.method == "POST":
-            return request.user.has_perm('shelter.add_pet')
-        elif request.method in ["PUT", "PATCH"]:
-            return request.user.has_perm('shelter.change_pet')
-        elif request.method == "DELETE":
-            return request.user.has_perm('shelter.delete_pet')
-        return True
+        return self._check_request(request)
