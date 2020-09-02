@@ -12,7 +12,13 @@ class Pet(models.Model):
     weight_kg = models.FloatField(validators=[validators.validate_positive])
     height_cm = models.FloatField(validators=[validators.validate_positive])
     special_sign = models.TextField()
+    owner = models.ForeignKey('auth.User',
+                              related_name='pets',
+                              on_delete=models.CASCADE)
     deleted_on = models.DateField(null=True,  blank=True)
 
     def __str__(self):
         return f"{self.nickname} {self.date_of_arrival}"
+
+    class Meta:
+        ordering = ["-date_of_arrival"]

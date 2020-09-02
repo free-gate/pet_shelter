@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,10 +20,10 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '956_0jyp&tc%0y$zdsdei1yq@(7+9u5*tv2&go%!0riajz+y9x'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '956_0jyp&tc%0y$zdsdei1yq@(7+9u5*tv2&go%!0riajz+y9x')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = []
 
@@ -75,12 +75,16 @@ WSGI_APPLICATION = 'pet_shelter.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+database_name = os.environ.get('POSTGRES_NAME', 'pet_shelter')
+database_user = os.environ.get('POSTGRES_USER', 'pet_shelter')
+database_pass = os.environ.get('POSTGRES_PASS', '123qweQWE')
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pet_shelter',
-        'USER': 'pet_shelter',
-        'PASSWORD': '123qweQWE',
+        'NAME': database_name,
+        'USER': database_user,
+        'PASSWORD': database_pass,
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -111,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Europe/Moscow'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 

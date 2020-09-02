@@ -1,16 +1,21 @@
 import datetime
 
-from rest_framework import viewsets
+from rest_framework import permissions, viewsets
 
 from .models import Pet
+from .permissions import AccessPermission
 from .serializers import PetSerializer
 
 
-class PetViewSet(viewsets.ModelViewSet):
-
+class PetApiViewSet(viewsets.ModelViewSet):
     serializer_class = PetSerializer
-    queryset = Pet.objects.filter(deleted_on__exact=None)
+    permission_classes = (permissions.IsAuthenticated,
+                          AccessPermission,)
 
     def perform_destroy(self, instance):
         instance.deleted_on = datetime.date.today()
         instance.save()
+
+    def get_queryset(self):
+        user = self.request.user
+        return Pet.objects.filter(deleted_on__exact=None).filter(owner__exact=user)
