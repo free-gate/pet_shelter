@@ -33,7 +33,7 @@
       "user": 1,
       "content_type": 7,
       "object_id": "1",
-      "object_repr": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ user 2020-09-06",
+      "object_repr": "Питомец user 2020-09-06",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -46,7 +46,7 @@
       "user": 1,
       "content_type": 7,
       "object_id": "2",
-      "object_repr": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ user 2 2020-09-06",
+      "object_repr": "Питомец user 2 2020-09-06",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -59,7 +59,7 @@
       "user": 1,
       "content_type": 7,
       "object_id": "2",
-      "object_repr": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ user 2 2020-09-06",
+      "object_repr": "Питомец user 2 2020-09-06",
       "action_flag": 2,
       "change_message": "[]"
     }
@@ -72,7 +72,7 @@
       "user": 1,
       "content_type": 7,
       "object_id": "3",
-      "object_repr": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ user 3 2020-09-06",
+      "object_repr": "Питомец user 3 2020-09-06",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -85,7 +85,7 @@
       "user": 1,
       "content_type": 7,
       "object_id": "4",
-      "object_repr": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ admin 2020-09-06",
+      "object_repr": "Питомец admin 2020-09-06",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -450,7 +450,7 @@
     "model": "shelter.pet",
     "pk": 1,
     "fields": {
-      "nickname": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ user",
+      "nickname": "Питомец user",
       "age": 1,
       "date_of_arrival": "2020-09-06",
       "weight_kg": 1.0,
@@ -464,7 +464,7 @@
     "model": "shelter.pet",
     "pk": 2,
     "fields": {
-      "nickname": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ user 2",
+      "nickname": "Питомец user 2",
       "age": 1,
       "date_of_arrival": "2020-09-06",
       "weight_kg": 2.0,
@@ -478,12 +478,12 @@
     "model": "shelter.pet",
     "pk": 3,
     "fields": {
-      "nickname": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ user 3",
+      "nickname": "Питомец user 3",
       "age": 3,
       "date_of_arrival": "2020-09-06",
       "weight_kg": 1.2,
       "height_cm": 1.5,
-      "special_sign": "пїЅпїЅпїЅпїЅпїЅ",
+      "special_sign": "текст",
       "owner": 2,
       "deleted_on": "2020-09-06"
     }
@@ -492,7 +492,7 @@
     "model": "shelter.pet",
     "pk": 4,
     "fields": {
-      "nickname": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ admin",
+      "nickname": "Питомец admin",
       "age": 3,
       "date_of_arrival": "2020-09-06",
       "weight_kg": 3.0,

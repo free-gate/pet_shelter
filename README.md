@@ -27,9 +27,14 @@
    или ввести свои параметры, но тогда необходимо или создать переменные окружения, которые относятся к базе данных (указанные выше) или менять настройки pet_shelter/pet_shelter/setting.py 
   ```
   pip install -r requirements.txt
-  python manage.py makemigrations
   python manage.py migrate
-  python manage.py createsuperuser # Create a superuser
+  python manage.py loaddata shelter/fixtures/initial_data.json
   python manage.py runserver
   ```
-  
+после выполнения команд создается:  
+superuser admin c паролем admin  
+пользователь user c паролем userUSER  
+немного животных в базе
+    
+Для доступа в панель администрации из которой можно управлять базой животных и пользователей, необходимо перейти по адресу http://127.0.0.1:8000/admin используя логин и пароль superuser
+Для доступа к странице API необходимо перейти по ссылке http://127.0.0.1:8000/shelter/api/, доступ разрешен, только авторизованным пользователям
