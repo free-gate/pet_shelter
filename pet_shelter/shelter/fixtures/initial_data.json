@@ -1,0 +1,505 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2020-09-06T20:29:12.753Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "user",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2020-09-06T20:29:26.064Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "user",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2020-09-06T20:29:56.998Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "������� user 2020-09-06",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2020-09-06T20:30:05.939Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "������� user 2 2020-09-06",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2020-09-06T20:30:08.301Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "������� user 2 2020-09-06",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2020-09-06T20:30:33.390Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "������� user 3 2020-09-06",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2020-09-06T20:30:54.582Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "������� admin 2020-09-06",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add pet",
+      "content_type": 7,
+      "codename": "add_pet"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change pet",
+      "content_type": 7,
+      "codename": "change_pet"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete pet",
+      "content_type": 7,
+      "codename": "delete_pet"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view pet",
+      "content_type": 7,
+      "codename": "view_pet"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$H7sbCHhY2QOq$iRhV4Gp0XU3NqdDHABNPefy7etl8WLrgLnEIWEdoQOA=",
+      "last_login": "2020-09-06T20:28:53.203Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-09-06T20:28:30.942Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$buPqxaFdI6Hi$2qKfc/bn1UiBaphvK4jHMA3y+8TJXVElgjUkAR32G7Y=",
+      "last_login": "2020-09-06T20:31:33.480Z",
+      "is_superuser": false,
+      "username": "user",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-09-06T20:29:12Z",
+      "groups": [],
+      "user_permissions": [
+        25,
+        26,
+        28
+      ]
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "shelter",
+      "model": "pet"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "jx94fp19rrln885ziuphyrh2qg01hkqr",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQAP_C2ZACCwWP3n0D2YVVqgaS0p6MfzckPeh1ZjJvEXHfStw7r3HJ4iy0OP0ywvTkOkR-YL03mVrd1oXkSORhu7y2zK_L0f4NCvYytgxgbhY1UwBCtOBRWw8KUiDtfPZWu2mejdEqK8TgHfGUgoeQORgSny_PLjdL:1kF1K1:j55xM93ns_HDvA3A-Jd97V_MDMt9ct4E6ZcXXhv7A2w",
+      "expire_date": "2020-09-20T20:31:33.485Z"
+    }
+  },
+  {
+    "model": "shelter.pet",
+    "pk": 1,
+    "fields": {
+      "nickname": "������� user",
+      "age": 1,
+      "date_of_arrival": "2020-09-06",
+      "weight_kg": 1.0,
+      "height_cm": 1.0,
+      "special_sign": "1",
+      "owner": 2,
+      "deleted_on": null
+    }
+  },
+  {
+    "model": "shelter.pet",
+    "pk": 2,
+    "fields": {
+      "nickname": "������� user 2",
+      "age": 1,
+      "date_of_arrival": "2020-09-06",
+      "weight_kg": 2.0,
+      "height_cm": 2.0,
+      "special_sign": "2",
+      "owner": 2,
+      "deleted_on": null
+    }
+  },
+  {
+    "model": "shelter.pet",
+    "pk": 3,
+    "fields": {
+      "nickname": "������� user 3",
+      "age": 3,
+      "date_of_arrival": "2020-09-06",
+      "weight_kg": 1.2,
+      "height_cm": 1.5,
+      "special_sign": "�����",
+      "owner": 2,
+      "deleted_on": "2020-09-06"
+    }
+  },
+  {
+    "model": "shelter.pet",
+    "pk": 4,
+    "fields": {
+      "nickname": "������� admin",
+      "age": 3,
+      "date_of_arrival": "2020-09-06",
+      "weight_kg": 3.0,
+      "height_cm": 3.0,
+      "special_sign": "3",
+      "owner": 1,
+      "deleted_on": null
+    }
+  }
+]
